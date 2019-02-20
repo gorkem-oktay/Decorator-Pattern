@@ -1,13 +1,21 @@
-﻿using System;
+﻿using System.Collections.Generic;
+
 namespace DecoratorPattern.Alchemy
 {
     public abstract class IPotion
     {
-        string mName = "Unknown Potion";
-        public string Name 
+        public string Name { set; get; } = "Unknown Potion";
+
+        public List<string> IngredientNames = new List<string>();
+
+        public string GetDescription()
         {
-            set => mName = value;
-            get => mName;
+            string ingredients = IngredientNames.Count > 0 ? IngredientNames[0] : "";
+            for (int i = 1; i < IngredientNames.Count; i++) 
+            {
+                ingredients += ", " + IngredientNames[i];
+            }
+            return Name + ": " + ingredients;
         }
 
         public abstract int Cost();

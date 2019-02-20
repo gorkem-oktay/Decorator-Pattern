@@ -1,18 +1,17 @@
-﻿using System;
-namespace DecoratorPattern.Alchemy
+﻿namespace DecoratorPattern.Alchemy
 {
     public class Vial : IngredientDecorator
     {
-        IPotion potion;
-
         public Vial(IPotion potion)
         {
-            this.potion = potion;
+            Potion = potion;
+            Name = potion.Name;
+            AddIngrediantName("Vial");
         }
 
         public override int Cost()
         {
-            return 4 + potion.Cost();
+            return 4 + Potion.Cost();
         }
     }
 }

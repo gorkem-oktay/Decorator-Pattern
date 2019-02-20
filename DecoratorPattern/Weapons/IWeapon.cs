@@ -2,26 +2,9 @@
 {
     public abstract class IWeapon
     {
-        string mType = "Unknown Type";
-        public string Type
-        {
-            set => mType = value;
-            get => mType;
-        }
-
-        int mDamage;
-        public int Damage
-        {
-            set => mDamage = value;
-            get => mDamage;
-        }
-
-        IWeaponBehaviour mBehaviour;
-        public IWeaponBehaviour Behaviour
-        {
-            set => mBehaviour = value;
-            get => mBehaviour;
-        }
+        public string Type { get; set; } = "Unknown Type";
+        public int Damage { get; set; } = 0;
+        public IWeaponBehaviour Behaviour { get; set; }
 
         public int CalculateDamage()
         {

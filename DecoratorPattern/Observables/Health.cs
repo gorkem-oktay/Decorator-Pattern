@@ -2,12 +2,7 @@
 {
     public class Health : IObservable
     {
-        int mValue;
-        public int Value
-        {
-            set => mValue = value;
-            get => mValue;
-        }
+        public int Value { get; set; }
 
         public Health(int value)
         {

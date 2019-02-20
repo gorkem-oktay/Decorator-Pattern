@@ -6,33 +6,10 @@ namespace DecoratorPattern.Characters
 {
     public abstract class ICharacter
     {
-        string mName;
-        public string Name
-        {
-            set => mName = value;
-            get => mName;
-        }
-
-        string mType;
-        public string Type
-        {
-            set => mType = value;
-            get => mType;
-        }
-
-        IWeapon mWeapon;
-        public IWeapon Weapon
-        {
-            set => mWeapon = value;
-            get => mWeapon;
-        }
-
-        Health mHealth;
-        public Health Health
-        {
-            set => mHealth = value;
-            get => mHealth;
-        }
+        public string Name { get; set; }
+        public string Type { get; set; }
+        public IWeapon Weapon { get; set; }
+        public Health Health { get; set; }
 
         public void Hit(ICharacter to)
         {

@@ -1,4 +1,5 @@
 ﻿using System;
+using DecoratorPattern.Alchemy;
 using DecoratorPattern.Characters;
 using DecoratorPattern.Weapons;
 
@@ -15,6 +16,7 @@ namespace DecoratorPattern
             };
 
             Console.WriteLine(ourKnight.Name + ", travels across countries to live an adventures life...");
+            Console.WriteLine();
 
             ICharacter evilGoblin = new Goblin
             {
@@ -38,6 +40,20 @@ namespace DecoratorPattern
             Console.WriteLine("And fearlessly attack " + evilGoblin.Type);
 
             ourKnight.Hit(evilGoblin);
+
+            Console.WriteLine();
+            Console.WriteLine("After defeating " + evilGoblin.Type);
+            Console.WriteLine(ourKnight.Name + " stops at a store to buy some Health Potion");
+            Console.WriteLine("And shopkeeper tells its cost as");
+            Console.WriteLine();
+
+            IPotion potion = new HealthPotion();
+            potion = new Vial(potion);
+            potion = new BlueHerb(potion);
+            potion = new Water(potion);
+
+            Console.WriteLine(potion.GetDescription());
+            Console.WriteLine("Cost: " + potion.Cost());
         }
     }
 }

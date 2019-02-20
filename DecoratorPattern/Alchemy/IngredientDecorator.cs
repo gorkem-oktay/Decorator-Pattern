@@ -1,8 +1,13 @@
-﻿using System;
-namespace DecoratorPattern.Alchemy
+﻿namespace DecoratorPattern.Alchemy
 {
     public abstract class IngredientDecorator : IPotion
     {
-        public abstract string GetName();
+        public IPotion Potion;
+
+        public void AddIngrediantName(string name) 
+        {
+            IngredientNames = Potion.IngredientNames;
+            IngredientNames.Add(name);
+        }
     }
 }

@@ -57,6 +57,7 @@
     <Compile Include="Alchemy\GreenHerb.cs" />
     <Compile Include="Alchemy\BlueHerb.cs" />
     <Compile Include="Alchemy\Vial.cs" />
+    <Compile Include="Alchemy\Water.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Characters\" />

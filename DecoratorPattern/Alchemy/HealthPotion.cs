@@ -1,5 +1,4 @@
-﻿using System;
-namespace DecoratorPattern.Alchemy
+﻿namespace DecoratorPattern.Alchemy
 {
     public class HealthPotion : IPotion
     {

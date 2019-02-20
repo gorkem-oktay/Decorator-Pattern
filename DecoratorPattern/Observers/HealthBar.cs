@@ -5,14 +5,9 @@ namespace DecoratorPattern.Observers
 {
     public class HealthBar : IObserver
     {
-        String mName;
-        public String Name
-        {
-            set => mName = value;
-            get => mName;
-        }
+        public string Name { get; set; }
 
-        public HealthBar(String name)
+        public HealthBar(string name)
         {
             Name = name;
         }
