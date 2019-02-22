@@ -3,6 +3,7 @@ using DecoratorPattern.Equipments.Weapons;
 
 namespace DecoratorPattern.Equipments.Runes
 {
+    // Decorator concrete class
     public class DamageRune : WeaponRuneDecorator
     {
         public DamageRune(IWeapon weapon) : base(weapon) 

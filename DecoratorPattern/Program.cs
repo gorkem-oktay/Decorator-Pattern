@@ -49,6 +49,7 @@ namespace DecoratorPattern
 
             ICharacter dummy = new Dummy();
 
+            // Decorator usage
             ourKnight.Weapon = new DamageRune(ourKnight.Weapon);
             ourKnight.Hit(dummy);
             ourKnight.Weapon = new DamageRune(ourKnight.Weapon);

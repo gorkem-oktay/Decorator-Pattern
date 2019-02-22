@@ -3,6 +3,7 @@ using DecoratorPattern.Equipments.Weapons;
 
 namespace DecoratorPattern.Equipments.Runes
 {
+    // Decorator interface
     public class WeaponRuneDecorator : IWeapon
     {
         public IWeapon weapon;
