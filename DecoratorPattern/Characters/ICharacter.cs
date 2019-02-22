@@ -1,6 +1,6 @@
 ﻿using System;
+using DecoratorPattern.Equipments.Weapons;
 using DecoratorPattern.Observables;
-using DecoratorPattern.Weapons;
 
 namespace DecoratorPattern.Characters
 {

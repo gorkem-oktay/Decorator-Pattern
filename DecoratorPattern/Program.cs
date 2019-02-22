@@ -1,7 +1,7 @@
 ﻿using System;
-using DecoratorPattern.Alchemy;
 using DecoratorPattern.Characters;
-using DecoratorPattern.Weapons;
+using DecoratorPattern.Equipments.Runes;
+using DecoratorPattern.Equipments.Weapons;
 
 namespace DecoratorPattern
 {
@@ -43,17 +43,18 @@ namespace DecoratorPattern
 
             Console.WriteLine();
             Console.WriteLine("After defeating " + evilGoblin.Type);
-            Console.WriteLine(ourKnight.Name + " stops at a store to buy some Health Potion");
-            Console.WriteLine("And shopkeeper tells its cost as");
+            Console.WriteLine(ourKnight.Name + " stops at the blacksmith to upgrade his sword");
+            Console.WriteLine("Then buys three damage rune and goes to training ground to test them");
             Console.WriteLine();
 
-            IPotion potion = new HealthPotion();
-            potion = new Vial(potion);
-            potion = new BlueHerb(potion);
-            potion = new Water(potion);
+            ICharacter dummy = new Dummy();
 
-            Console.WriteLine(potion.GetDescription());
-            Console.WriteLine("Cost: " + potion.Cost());
+            ourKnight.Weapon = new DamageRune(ourKnight.Weapon);
+            ourKnight.Hit(dummy);
+            ourKnight.Weapon = new DamageRune(ourKnight.Weapon);
+            ourKnight.Hit(dummy);
+            ourKnight.Weapon = new DamageRune(ourKnight.Weapon);
+            ourKnight.Hit(dummy);
         }
     }
 }

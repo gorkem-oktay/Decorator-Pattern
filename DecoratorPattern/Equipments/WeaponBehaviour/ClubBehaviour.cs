@@ -1,4 +1,4 @@
-﻿namespace DecoratorPattern.Weapons
+﻿namespace DecoratorPattern.Equipments.WeaponsBehaviour
 {
     public class ClubBehaviour : IWeaponBehaviour
     {

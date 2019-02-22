@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DecoratorPattern.Weapons
+namespace DecoratorPattern.Equipments.WeaponsBehaviour
 {
     public class SwordBehaviour : IWeaponBehaviour
     {

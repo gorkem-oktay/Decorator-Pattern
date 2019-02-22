@@ -42,29 +42,27 @@
     <Compile Include="Characters\Goblin.cs" />
     <Compile Include="Characters\Troll.cs" />
     <Compile Include="Observers\HealthBar.cs" />
-    <Compile Include="Weapons\Club.cs" />
-    <Compile Include="Weapons\ClubBehaviour.cs" />
-    <Compile Include="Weapons\Dagger.cs" />
-    <Compile Include="Weapons\DaggerBehaviour.cs" />
-    <Compile Include="Weapons\IWeapon.cs" />
-    <Compile Include="Weapons\IWeaponBehaviour.cs" />
-    <Compile Include="Weapons\Sword.cs" />
-    <Compile Include="Weapons\SwordBehaviour.cs" />
-    <Compile Include="Alchemy\IPotion.cs" />
-    <Compile Include="Alchemy\HealthPotion.cs" />
-    <Compile Include="Alchemy\ManaPotion.cs" />
-    <Compile Include="Alchemy\IngredientDecorator.cs" />
-    <Compile Include="Alchemy\GreenHerb.cs" />
-    <Compile Include="Alchemy\BlueHerb.cs" />
-    <Compile Include="Alchemy\Vial.cs" />
-    <Compile Include="Alchemy\Water.cs" />
+    <Compile Include="Equipments\Weapons\Club.cs" />
+    <Compile Include="Equipments\Weapons\Dagger.cs" />
+    <Compile Include="Equipments\Weapons\IWeapon.cs" />
+    <Compile Include="Equipments\Weapons\Sword.cs" />
+    <Compile Include="Equipments\WeaponBehaviour\ClubBehaviour.cs" />
+    <Compile Include="Equipments\WeaponBehaviour\DaggerBehaviour.cs" />
+    <Compile Include="Equipments\WeaponBehaviour\IWeaponBehaviour.cs" />
+    <Compile Include="Equipments\WeaponBehaviour\SwordBehaviour.cs" />
+    <Compile Include="Equipments\IEquipment.cs" />
+    <Compile Include="Characters\Dummy.cs" />
+    <Compile Include="Equipments\Runes\WeaponRuneDecorator.cs" />
+    <Compile Include="Equipments\Runes\DamageRune.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Characters\" />
     <Folder Include="Observers\" />
     <Folder Include="Observables\" />
-    <Folder Include="Weapons\" />
-    <Folder Include="Alchemy\" />
+    <Folder Include="Equipments\" />
+    <Folder Include="Equipments\Weapons\" />
+    <Folder Include="Equipments\WeaponBehaviour\" />
+    <Folder Include="Equipments\Runes\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
