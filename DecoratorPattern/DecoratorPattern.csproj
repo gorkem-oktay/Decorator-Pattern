@@ -46,10 +46,10 @@
     <Compile Include="Equipments\Weapons\Dagger.cs" />
     <Compile Include="Equipments\Weapons\IWeapon.cs" />
     <Compile Include="Equipments\Weapons\Sword.cs" />
-    <Compile Include="Equipments\WeaponBehaviour\ClubBehaviour.cs" />
-    <Compile Include="Equipments\WeaponBehaviour\DaggerBehaviour.cs" />
+    <Compile Include="Equipments\WeaponBehaviour\NormalHitBehaviour.cs" />
+    <Compile Include="Equipments\WeaponBehaviour\DoubleStrikeBehaviour.cs" />
     <Compile Include="Equipments\WeaponBehaviour\IWeaponBehaviour.cs" />
-    <Compile Include="Equipments\WeaponBehaviour\SwordBehaviour.cs" />
+    <Compile Include="Equipments\WeaponBehaviour\CriticalStrikeBehaviour.cs" />
     <Compile Include="Equipments\IEquipment.cs" />
     <Compile Include="Characters\Dummy.cs" />
     <Compile Include="Equipments\Runes\WeaponRuneDecorator.cs" />

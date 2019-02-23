@@ -8,7 +8,7 @@ namespace DecoratorPattern.Equipments.Weapons
         {
             Name = "Club";
             SetDamage(8);
-            Behaviour = new ClubBehaviour();
+            Behaviour = new NormalHitBehaviour();
         }
     }
 }

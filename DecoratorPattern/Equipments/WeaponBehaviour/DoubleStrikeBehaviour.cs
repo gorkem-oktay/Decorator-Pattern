@@ -2,7 +2,7 @@
 
 namespace DecoratorPattern.Equipments.WeaponsBehaviour
 {
-    public class DaggerBehaviour : IWeaponBehaviour
+    public class DoubleStrikeBehaviour : IWeaponBehaviour
     {
         public int CalculateDamage(int minimum)
         {

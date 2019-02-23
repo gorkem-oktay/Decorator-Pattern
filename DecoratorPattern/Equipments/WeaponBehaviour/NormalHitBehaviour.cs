@@ -1,6 +1,6 @@
 ﻿namespace DecoratorPattern.Equipments.WeaponsBehaviour
 {
-    public class ClubBehaviour : IWeaponBehaviour
+    public class NormalHitBehaviour : IWeaponBehaviour
     {
         public int CalculateDamage(int minimum)
         {

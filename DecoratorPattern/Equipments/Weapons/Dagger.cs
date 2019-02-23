@@ -8,7 +8,7 @@ namespace DecoratorPattern.Equipments.Weapons
         {
             Name = "Dagger";
             SetDamage(4);
-            Behaviour = new DaggerBehaviour();
+            Behaviour = new DoubleStrikeBehaviour();
         }
     }
 }

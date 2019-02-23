@@ -8,7 +8,7 @@ namespace DecoratorPattern.Equipments.Weapons
         {
             Name = "Sword";
             SetDamage(10);
-            Behaviour = new SwordBehaviour();
+            Behaviour = new CriticalStrikeBehaviour();
         }
     }
 }
