@@ -4,7 +4,7 @@
 In these repositories, some design patterns are implemented to a mini game system for self education. They may not be suited to use in an actual game (directly anyway). However, it is good to have some examples underhand to take reference. And even if anyone wants to use them, you are welcome.
 
 ### Definition
-Decorator pattern, attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extended functionality.
+**_Decorator pattern_**, attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extended functionality.
 
 ### Description
 After the battle with goblin, our character wants to power up his weapon with runes. Runes may increase our weapons' damage, critical chance, adds fire damage etc... So they will add some additional effects to our equipments, change their values or calculations. So what can we do here? Should we keep the runes in an array and check if there is any rune, and if there is then check which one it is, if it just increase some values or applies some additional effect... Even while writing, I got confused and couldn't follow my own sentence. Hmmm, I think it is not a good option.
